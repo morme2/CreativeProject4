@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Have YOU Been Hacked??</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <div id="app">
+        <h1><img class="a" src="CIA.png" alt="official logo" width="50" height="50" align="middle"> CIA SEARCH ALGORITHM </h1>
+        <h2>Enter your name, SSN, and a valid credit card number below and we will search our database to see if your identity has been comprimised.</h2>
+        <form @submit.prevent="postInfo">
+          <input v-model="addedName" placeholder="Name"></p>
+          <input v-model="addedSSN" placeholder="xxx-xx-xxxx"></p>
+          <input v-model="addedCCN" placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <br>
+        <a href="mattheworme.com:4202/getinfo" target="_blank">Secret Government Info (ONLY FOR GOVERNMENT OFFICIALS)</a>
+        <p>(click this, then refresh the page that opens)</p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/morme2/CreativeProject4">GitHub Link</a>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
